@@ -1,28 +1,38 @@
-title: Long Haul
-description: Long Form Jekyll theme built with SASS / COMPASS / SUSY
+# Site settings
+# See default settings at https://jekyllrb.com/docs/configuration/#default-configuration
+title: Antoine Cotten
+description: IT Operations in a service-oriented world
+url: https://acotten.com
+permalink: post/:title
 
-url: http://brianmaierjr.github.com/long-haul
-baseurl: ""
-paginate_path: "blog/page:num/"
-permalink: blog/:title/
-
-markdown: kramdown
-highlighter: rouge
-gems: [jekyll-paginate]
+# Plugins
+plugins:
+  - jekyll-paginate
 paginate: 5
 
+# Exclusions
+exclude:
+  - README.md
+  - LICENSE
+  - assets/scss/
+  - node_modules/
+  - package*.json
+  - Gemfile*
+  - gulpfile.js
+
+# Analytics
+google_analytics: UA-77121622-1
+
+# Custom variables
+author: Antoine Cotten
+
 navigation:
- - title: Home
-   url: /index.html
- - title: About
-   url: /about
- - title: Contact
-   url: /contact
+  - title: Home
+    url: /
+  - title: About
+    url: /about
 
 social:
-   github: brianmaierjr
-   twitter: brianmaierjr
-   facebook: brianmaierjr
-   email: brimaidesigns@gmail.com
-
-google_analytics: "UA-58263416-1"
+  github: antoineco
+  twitter: AntoineCotten
+  linkedin: antoinecotten

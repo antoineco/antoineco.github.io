@@ -15,10 +15,14 @@ body {
 	font-size: 112.5%; // 18px base font size
 	color: $black;
 	overflow-x: hidden;
-  margin: 0;
+	margin: 0;
 
 	p , ul {
 		margin: 0 0 2rem;
+	}
+
+	code {
+		font-family: $mono;
 	}
 }
 
@@ -40,7 +44,7 @@ img,video,audio,iframe,object{
 
 // Layout
 .container {
-  max-width: 610px;
+	max-width: 610px;
 	padding: 0 20px;
 	margin-left: auto;
 	margin-right: auto;
@@ -178,25 +182,28 @@ HEADER STYLING
 
 .header {
 	background-color: $background-color;
-	background-image: url('../img/touring.jpg');
+	background-image: url('../img/control.jpg');
 	background-size: cover;
-	background-position: center center;
+	background-position: center 85%;
 	color: white;
 	padding: 0;
 	height: 3em;
 
 	.container {
 		padding: 0;
-    max-width: 100%;
+		max-width: 100%;
+	}
+
+	h1, h2 {
+		margin: 0;
+		font-family: $sans-serif;
 	}
 
 	h1 {
-		margin: 0;
 		float: left;
 		padding-left: 2rem;
 		font-size: 1em;
 		line-height: 3em;
-		font-family: $sans-serif;
 		font-weight: 800;
 		text-transform: uppercase;
 
@@ -204,6 +211,14 @@ HEADER STYLING
 			color: white;
 			text-decoration: none;
 		}
+	}
+
+	h2 {
+		display: none;
+		padding-left: .7rem;
+		line-height: 4em;
+		font-size: .75em;
+		font-weight: 400;
 	}
 }
 
@@ -213,6 +228,12 @@ POST STYLING
 ***************/
 
 .post {
+
+	p {
+		code {
+			font-size: .95rem;
+		}
+	}
 
 	.postTitle {
 		text-align: center;
@@ -226,6 +247,14 @@ POST STYLING
 		padding: 0;
 		line-height: 1.8;
 		position: relative;
+
+		p {
+			width: unset;
+		}
+
+		footer {
+			margin-top: 1.5em;
+		}
 
 		&:before {
 			content: "";
@@ -257,6 +286,16 @@ POST STYLING
 		font-weight: 300;
 	}
 
+	.tldr {
+		color: lighten(black, 50%);
+
+		&:before {
+			content: "tl;dr";
+			margin-right: .6em;
+			font-weight: 700;
+		}
+	}
+
 	figure {
 		margin: 3rem 0;
 
@@ -274,12 +313,21 @@ POST STYLING
 	}
 
 	img {
-		margin-bottom: 2rem;
+		margin: 0 auto 2rem auto;
+		display: block;
 	}
 
-	.highlight {
+	div.highlight {
 		clear: both;
-		margin-bottom: 2rem;
+		margin: 2rem 0;
+		font-size: .9rem;
+		white-space: pre;
+		overflow: auto;
+		word-wrap: normal; /* horizontal scrolling */
+		-moz-border-radius: 3px;
+		-webkit-border-radius: 3px;
+		border-radius: 3px;
+		padding: 20px;
 	}
 
 	.dropcap {
@@ -287,12 +335,21 @@ POST STYLING
 		margin-right: .45rem;
 	}
 
-	.featuredImage {
+	.featuredImage, .aboutPicture {
 		position: relative;
-		margin-top: 2rem;
 
 		img {
 			margin-bottom: 0;
+		}
+	}
+
+	.featuredImage {
+		margin-top: 2rem;
+	}
+
+	.aboutPicture {
+		img {
+			border-radius: 50%;
 		}
 	}
 }
@@ -372,6 +429,15 @@ POST NAV STYLING
 
 
 /***************
+DISQUS STYLING
+***************/
+
+div#disqus_thread {
+	padding-top: 3rem;
+}
+
+
+/***************
 FOOTER STYLING
 ***************/
 
@@ -383,7 +449,7 @@ FOOTER STYLING
 	.container {
 		border-top: 4px solid darken(white, 15%);
 		padding-top: .5em;
-    max-width: 90%;
+		max-width: 90%;
 	}
 
 	.copy, .footer-links {

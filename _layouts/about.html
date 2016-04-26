@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<div class="post">
+    <h1 class="pageTitle">{{ page.title }}</h1>
+    {% if page.image %}
+    <div class="aboutPicture">
+        <img src="{{ '/assets/img/' | relative_url | append: page.image }}" alt="" />
+    </div>
+    {% endif %}
+
+    {{ content }}
+</div>

@@ -23,9 +23,9 @@ GLOBAL STYLES
 }
 
 .container {
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
 	padding: 0;
 }
 
@@ -36,7 +36,7 @@ HOMEPAGE STYLING
 
 #home {
 	.posts, .pageTitle, .pagination {
-    width: 75%;
+		width: 75%;
 		float: none;
 		margin: 0 auto 1.5em;
 	}
@@ -55,12 +55,13 @@ HEADER STYLING
 	height: 15em;
 	position: relative;
 	padding-bottom: 2em;
+	background-position: center bottom;
 
 	.container {
 		position: relative;
 		top: 50%;
 		transform: translateY(-50%);
-    max-width: 800px;
+		max-width: 800px;
 		overflow: hidden;
 	}
 
@@ -68,6 +69,14 @@ HEADER STYLING
 		font-size: 3em;
 		line-height: 1;
 		letter-spacing: -3px;
+		padding-left: 0;
+	}
+
+	h2 {
+		font-size: 1em;
+		line-height: 2;
+		float: left;
+		clear: left;
 		padding-left: 0;
 	}
 
@@ -136,7 +145,7 @@ POST STYLING
 
 .post {
 	h1, h2, h3, h4, h5, h6, p, ul, ol, dl, .pageTitle {
-    width: 75%;
+		width: 75%;
 		float: none;
 		margin: 0 auto 2rem; 
 	}
@@ -206,7 +215,7 @@ FOOTER STYLES
 
 	.container {
 		padding: 1rem 0;
-    max-width: 800px;
+		max-width: 800px;
 	}
 }
 
@@ -223,9 +232,9 @@ CONTACT PAGE STYLING
 
 #contact {
 	form {
-    max-width: 48%;
-    width: 48%;
-    float: right;
-    margin-right: 0;
+		max-width: 48%;
+		width: 48%;
+		float: right;
+		margin-right: 0;
 	}
 }
