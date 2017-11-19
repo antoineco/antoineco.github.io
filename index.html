@@ -10,7 +10,7 @@ title: Recent Posts
       <li>
         <span class="date">{{ post.date | date: '%B %d, %Y' }}</span>
         <h3><a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h3>
-        <p class="description">{% if post.description %}{{ post.description | strip_html | truncate: 250 }}{% else %}{{ post.excerpt | strip_html | truncate: 250 }}{% endif %}</p>
+        <p>{% if post.description %}{{ post.description }}{% else %}{{ post.excerpt | strip_html }}{% endif %}</p>
       </li>
     {% endfor %}
   </ul>
