@@ -623,6 +623,6 @@ something about it on request.
 *Want to share your own experience hardening Kubernetes, or simply discuss the topics from this post? Feel free to
 comment below.*
 
-*Post picture by [Gellinger][postpic]*
+*Post picture by [Gerhard Gellinger][postpic]*
 
-[postpic]: https://pixabay.com/en/animals-cat-bird-parrot-cage-2100629/
+[postpic]: https://pixabay.com/images/id-2100629/

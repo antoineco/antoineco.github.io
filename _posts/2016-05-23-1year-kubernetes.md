@@ -511,5 +511,5 @@ something to the elements that have been discussed.*
 
 *Post picture by [skeeze][postpic]*
 
-[kubeweekly]: https://kubeweekly.com/
-[postpic]: https://pixabay.com/en/ship-helm-sunset-cutter-coast-guard-759954/
+[kubeweekly]: https://kubeweekly.io/
+[postpic]: https://pixabay.com/images/id-759954/
