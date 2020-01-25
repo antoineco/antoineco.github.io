@@ -1,7 +1,7 @@
 # Site settings
 # See default settings at https://jekyllrb.com/docs/configuration/#default-configuration
 title: Antoine Cotten
-description: IT Operations in a service-oriented world
+description: Setting distributed applications in motion in a service-oriented world
 url: https://acotten.com
 permalink: post/:title
 
