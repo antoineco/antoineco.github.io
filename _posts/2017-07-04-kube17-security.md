@@ -584,7 +584,7 @@ apiVersion: v1
 clusters:
   - name: requestbin
     cluster:
-      server: https://requestb.in/xyz12345
+      server: https://xyz12345.x.pipedream.net/
 contexts:
   - name: webhook
     context:
@@ -607,7 +607,7 @@ After restarting the apiserver, audit logs should start flowing to the Bin:
 Check out the documentation for more advanced examples: [Auditing][audit].
 
 [audit]: https://kubernetes.io/docs/tasks/debug-application-cluster/audit/#audit-policy
-[rqbin]: https://requestb.in/
+[rqbin]: https://requestbin.com
 
 ## Final words
 
