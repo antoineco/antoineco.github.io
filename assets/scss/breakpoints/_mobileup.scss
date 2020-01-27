@@ -228,9 +228,13 @@ POST STYLING
 
 .post {
 
-	p {
-		code {
+	p, li {
+		& > code {
+			background-color: $highlight-color;
 			font-size: .95rem;
+			border-radius: $br;
+			margin: 0;
+			padding: .3em .5em;
 		}
 	}
 
