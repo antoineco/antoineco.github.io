@@ -1,0 +1,15 @@
+{% assign taxonomies = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+{%- for taxonomy in taxonomies -%}
+  <h3 id="{{ taxonomy.name }}">{{ taxonomy.name }}</h3>
+  <ul>
+    {%- assign posts = taxonomy.items -%}
+    {%- for post in posts -%}
+      <li>
+        <time class="blog-post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%b %d" }}</time> 
+        <a href="{{ post.url | replace:".html","" | relative_url }}" class="blog-post-title">
+          {{ post.title }}
+        </a>
+      </li>
+    {%- endfor -%}
+  </ul>
+{%- endfor -%}

@@ -1,0 +1,47 @@
+// SPDX-License-Identifier: ISC
+// Copyright (c) 2019-2022 Eliott Vincent
+// Copyright (c) 2023 Antoine Cotten
+
+@charset "utf-8";
+
+$base-font-family: sans-serif;
+$base-font-size: 14px;
+$small-font-size: $base-font-size * 0.875;
+$base-line-height: 1.7;
+
+$title-font-family: system-ui;
+
+$spacing-unit: 30px;
+
+// Original palette: dcdcdd c5c3c6 46494c 4c5c68 1985a1
+// https://coolors.co/palette/dcdcdd-c5c3c6-46494c-4c5c68-1985a1
+$text-color: #111;
+$site-title-color: #46494c;
+$background-color: #fdfdfd;
+$brand-color: #1985a1;
+
+$grey-color: #898e92;
+$grey-color-light: lighten($grey-color, 40%);
+$grey-color-dark: darken($grey-color, 25%);
+
+$content-width: 800px;
+
+$on-mobile: 600px;
+$on-laptop: 800px;
+
+@mixin media-query($device) {
+  @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@import
+  "base", 
+  "highlights",
+  "layout", 
+  "site", 
+  "work", 
+  "blog",
+  "post", 
+  "404"
+;

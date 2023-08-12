@@ -1,0 +1,54 @@
+{% comment %}
+SPDX-License-Identifier: ISC
+Copyright (c) 2019-2022 Eliott Vincent
+Copyright (c) 2023 Antoine Cotten
+{% endcomment %}
+<footer class="site-footer">
+  <div class="wrapper">
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <h4>Contact</h4>
+
+        <div class="social-links">
+          {% for contact in site.footer.contact %}
+            <div class="social-link contact-links">
+              <svg>
+                <use xlink:href="{{ '/assets/img/icons/social.svg#' | append: contact.name | downcase | relative_url }}"></use>
+              </svg>
+              <a href="{{ contact.link }}" id="{{ contact.name | downcase }}-link">
+                {% if contact.value and contact.value != "" and contact.value != nil %}
+                  {{ contact.value }}
+                {% else %}
+                  {{ contact.name }}
+                {% endif %}
+              </a>
+            </div>
+
+          {% endfor %}
+        </div>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <h4>Follow</h4>
+
+        <div class="social-links follow-links">
+          {% for follow in site.footer.follow %}
+            <div class="social-link">
+              <svg>
+                <use xlink:href="{{ '/assets/img/icons/social.svg#' | append: follow.name | downcase | relative_url }}"></use>
+              </svg>
+              <a href="{{ follow.link }}">
+                {% if follow.value and follow.value != "" and follow.value != nil %}
+                  {{ follow.value }}
+                {% else %}
+                  {{ follow.name }}
+                {% endif %}
+              </a>
+            </div>
+
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,35 @@
+// SPDX-License-Identifier: ISC
+// Copyright (c) 2019-2022 Eliott Vincent
+// Copyright (c) 2023 Antoine Cotten
+
+.blog {
+  ul {
+    margin-left: 0;
+  }
+}
+
+.blog-post-list {
+  li {
+    list-style: none;
+  }
+
+  .blog-post-date {
+    width: 8em;
+    color: $grey-color;
+    display: block;
+    float: left;
+
+    @include media-query($on-mobile) {
+      display: block;
+      float: none;
+      color: $grey-color-dark;
+      font-size: 11px;
+      margin-top: 14px;
+    }
+  }
+
+  .blog-post-title {
+    font-size: 100%;
+    letter-spacing: normal;
+  }
+}

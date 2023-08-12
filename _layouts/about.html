@@ -1,0 +1,29 @@
+{% comment %}
+SPDX-License-Identifier: ISC
+Copyright (c) 2019-2022 Eliott Vincent
+Copyright (c) 2023 Antoine Cotten
+{% endcomment %}
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="home">
+          <img
+            src="{{ page.profile_picture.src | relative_url }}"
+            alt="{{ page.profile_picture.alt }}"
+            class="profile-pic"
+          />
+
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>

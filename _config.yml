@@ -1,0 +1,37 @@
+title: Antoine Cotten
+description: Antoine Cotten's personal web page. Perspectives on tech and whatnot.
+url: https://antoineco.github.io
+og_image: /assets/img/site-pic.jpg
+
+header:
+  pages:
+    - name: Journal
+      slug: /
+    - name: About
+
+footer:
+  contact:
+    - name: Email
+      value: hello@acotten.com
+      link: mailto:hello@acotten.com
+  follow:
+    - name: Twitter
+      link: http://twitter.com/antnco
+      username: '@antnco'
+    - name: LinkedIn
+      link: http://linkedin.com/in/antoinecotten
+    - name: GitHub
+      link: http://github.com/antoineco
+    - name: RSS
+      link: /feed.xml
+
+sass:
+  style: compressed
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - LICENSE*.txt
+  - CNAME
