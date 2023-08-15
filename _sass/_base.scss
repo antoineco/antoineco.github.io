@@ -163,9 +163,9 @@ blockquote {
 pre,
 code {
   max-width: 100%;
-  border: 1px solid $grey-color-light;
+  border: 1px solid $code-border-color;
   border-radius: 3px;
-  background-color: #fcfcfc;
+  background-color: $code-background-color;
 }
 
 code {

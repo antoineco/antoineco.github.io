@@ -61,4 +61,13 @@
   .il { color: #009999 } /* Literal.Number.Integer.Long */
 
   .lineno { color: #888 } /* Line numbers (Rouge) */
+
+  .language-sh,
+  .language-console {
+    .nt { font-weight: inherit } /* Name.Tag (flags) */
+  }
+
+  .language-console {
+    .gp { color: #4c8317 } /* Generic.Prompt */
+  }
 }
