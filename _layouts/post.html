@@ -2,7 +2,7 @@
 SPDX-License-Identifier: ISC
 Copyright (c) 2019-2022 Eliott Vincent
 Copyright (c) 2023 Antoine Cotten
-{% endcomment %}
+{% endcomment -%}
 <!DOCTYPE html>
 <html>
   {% include head.html %}
@@ -15,22 +15,20 @@ Copyright (c) 2023 Antoine Cotten
         <div class="post">
 
           <header class="post-header">
-
-            {%- if page.draft -%}
+            {%- if page.draft %}
               {% include draft-banner.html %}
-            {%- endif -%}
-
+            {%- endif %}
             <h1 class="post-title">
-            {% if page.headline_formatted_title %}
+            {%- if page.headline_formatted_title %}
               {{ page.headline_formatted_title | newline_to_br }}
-            {% else %}
+            {%- else %}
               {{ page.title }}
-            {% endif %}
+            {%- endif %}
             </h1>
 
-            {%- if page.subtitle -%}
+            {%- if page.subtitle %}
             <h1 class="post-subtitle">{{ page.subtitle }}</h1>
-            {%- endif -%}
+            {%- endif %}
             <p class="post-meta">
               <time class="post-date" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
                 {{ page.date | date_to_long_string: "ordinal" }}
@@ -56,14 +54,13 @@ Copyright (c) 2023 Antoine Cotten
             {{ content }}
           </article>
 
-          {% if page.draft %}
-              {% include draft-banner.html %}
-          {% endif %}
-
+          {%- if page.draft %}
+            {% include draft-banner.html %}
+          {%- endif %}
         </div>
-        {%- if page.license -%}
+        {%- if page.license %}
           {% include cc-by-4.0.html %}
-        {% endif %}
+        {%- endif %}
       </div>
     </div>
 

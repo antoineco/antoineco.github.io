@@ -8,46 +8,45 @@ Copyright (c) 2023 Antoine Cotten
   <meta name="viewport" content="width=device-width initial-scale=1" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
 
-  {% assign page_is_article = false %}
-  {% if page.layout == "post" %}{% assign page_is_article = true %}{% endif %}
+  {%- assign page_is_article = false %}
+  {%- if page.layout == "post" %}{% assign page_is_article = true %}{% endif %}
 
-  {% assign page_title = "" %}
-  {% if page.draft %}{% assign page_title = page_title | append: "[DRAFT] " %}{% endif %}
-  {% if page.title %}
+  {%- assign page_title = "" %}
+  {%- if page.draft %}{% assign page_title = page_title | append: "[DRAFT] " %}{% endif %}
+  {%- if page.title %}
     {% assign page_title = page_title | append: site.title | append: " | " | append: page.title %}
-  {% else %}
+  {%- else %}
     {% assign page_title = site.title %}
-  {% endif %}
+  {%- endif %}
 
-  {% assign page_description = "" %}
-  {% if page.draft %}{% assign page_description = page_description | append: "[DRAFT] " %}{% endif %}
-  {% if page.blurb %}
+  {%- assign page_description = "" %}
+  {%- if page.draft %}{% assign page_description = page_description | append: "[DRAFT] " %}{% endif %}
+  {%- if page.blurb %}
     {% assign page_description = page_description | append: page.blurb %}
-  {% else %}
+  {%- else %}
     {% assign page_description = site.description %}
   {% endif %}
 
-  {% assign page_url = page.url | replace: "index.html","" | replace: ".html","" | absolute_url %}
+  {%- assign page_url = page.url | replace: "index.html","" | replace: ".html","" | absolute_url %}
 
-  {% assign page_image = site.og_image | absolute_url %}
-  {% if page.og_image %}
+  {%- assign page_image = site.og_image | absolute_url %}
+  {%- if page.og_image %}
     {% assign page_image = page.og_image | absolute_url %}
   {% endif %}
 
-  {% for follow in site.footer.follow %}
+  {%- for follow in site.footer.follow %}
     {% if follow.name == 'Twitter' %}
       {% assign twitter_username = follow.username %}
       {% break %}
     {% endif %}
-  {% endfor %}
+  {% endfor -%}
 
-  {% comment %}
+  {%- comment %}
   Primary Meta Tags
   {% endcomment %}
   <title>{{ page_title }}</title>
   <meta name="title" content="{{ page_title }}"/>
   <meta name="description" content="{{ page_description }}"/>
-
   {% comment %}
   Open Graph
   {% endcomment %}
@@ -57,7 +56,6 @@ Copyright (c) 2023 Antoine Cotten
   <meta property="og:title" content="{{ page_title }}"/>
   <meta property="og:description" content="{{ page_description }}"/>
   <meta property="og:image" content="{{ page_image }}"/>
-
   {% comment %}
   Twitter
   {% endcomment %}
@@ -66,11 +64,10 @@ Copyright (c) 2023 Antoine Cotten
   <meta property="twitter:title" content="{{ page_title }}"/>
   <meta property="twitter:description" content="{{ page_description }}"/>
   <meta property="twitter:image" content="{{ page_image }}"/>
-  {% if twitter_username %}
+  {%- if twitter_username %}
   <meta property="twitter:creator" content="{{ twitter_username }}"/>
   <meta property="twitter:site" content="{{ twitter_username }}"/>
   {% endif %}
-
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}"/>
   <link rel="canonical" href="{{ page_url }}"/>
   <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}" type="image/x-icon"/>

@@ -2,7 +2,7 @@
 SPDX-License-Identifier: ISC
 Copyright (c) 2019-2022 Eliott Vincent
 Copyright (c) 2023 Antoine Cotten
-{% endcomment %}
+{% endcomment -%}
 <!DOCTYPE html>
 <html>
   {% include head.html %}
@@ -13,12 +13,7 @@ Copyright (c) 2023 Antoine Cotten
     <div class="page-content">
       <div class="wrapper">
         <div class="home">
-          <img
-            src="{{ page.profile_picture.src | relative_url }}"
-            alt="{{ page.profile_picture.alt }}"
-            class="profile-pic"
-          />
-
+          <img src="{{ page.profile_picture.src | relative_url }}" alt="{{ page.profile_picture.alt }}" class="profile-pic" />
           {{ content }}
         </div>
       </div>

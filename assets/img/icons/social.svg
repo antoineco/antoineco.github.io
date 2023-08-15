@@ -8,9 +8,9 @@ Copyright (c) 2016-present Parker Moore and the minima contributors
 Copyright (c) 2023 Antoine Cotten
 {% endcomment %}
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-{%- assign footer_all = site.footer.contact | concat: site.footer.follow -%}
-{% for entry in footer_all %}
-  {%- assign symbol_id = entry.name | downcase -%}
-  {%- include social-icons.html key = symbol_id -%}
-{%- endfor -%}
+{% assign footer_all = site.footer.contact | concat: site.footer.follow %}
+{%- for entry in footer_all %}
+  {%- assign symbol_id = entry.name | downcase %}
+  {%- include social-icons.html key = symbol_id %}
+{%- endfor %}
 </svg>

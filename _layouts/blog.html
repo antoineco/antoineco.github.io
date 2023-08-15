@@ -2,7 +2,7 @@
 SPDX-License-Identifier: ISC
 Copyright (c) 2019-2022 Eliott Vincent
 Copyright (c) 2023 Antoine Cotten
-{% endcomment %}
+{% endcomment -%}
 <!DOCTYPE html>
 <html>
   {% include head.html %}
@@ -17,14 +17,14 @@ Copyright (c) 2023 Antoine Cotten
           {{ content }}
           <ul class="blog-post-list">
           {% for post in site.posts %}
-          {% if post.draft != true %}
+          {%- if post.draft != true %}
             <li>
               <time class="blog-post-date" datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
               <a href="{{ post.url | replace:".html","" | prepend: site.baseurl }}" class="blog-post-title">
                 {{ post.title }}
               </a>
             </li>
-          {% endif %}
+          {%- endif %}
           {% endfor %}
           </ul>
         </div>
