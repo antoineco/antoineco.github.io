@@ -1,9 +1,9 @@
 ---
 layout: about
+title: About
 profile_picture:
   src: /assets/img/site-pic.jpg
   alt: Website picture - Quiberon, France
-slug: /about
 ---
 
 Software developer with a strong background in infrastructure and operations, my focus used to be on building a DevOps

@@ -14,7 +14,8 @@ Copyright (c) 2023 Antoine Cotten
   {%- assign page_title = "" %}
   {%- if page.draft %}{% assign page_title = page_title | append: "[DRAFT] " %}{% endif %}
   {%- if page.title %}
-    {% assign page_title = page_title | append: site.title | append: " | " | append: page.title %}
+    {% assign page_title = page.title %}
+    {% unless page_is_article %}{% assign page_title = page_title | prepend: " | " | prepend: site.title %}{% endunless %}
   {%- else %}
     {% assign page_title = site.title %}
   {%- endif %}
