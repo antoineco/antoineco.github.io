@@ -2,7 +2,7 @@
 layout: about
 title: About
 profile_picture:
-  src: /assets/img/site-pic.jpg
+  src: /assets/img/profile-pic.webp
   alt: Website picture - Quiberon, France
 ---
 
