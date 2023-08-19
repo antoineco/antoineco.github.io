@@ -1,4 +1,5 @@
 title: Antoine Cotten
+author: Antoine Cotten
 description: My personal web page. Perspectives on tech and whatnot.
 url: https://acotten.com
 og_image: /assets/img/site-pic.webp
@@ -28,12 +29,15 @@ footer:
 sass:
   style: compressed
 
-plugins:
-  - jekyll-feed
-
 exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
   - LICENSE*.txt
   - CNAME
+
+plugins:
+  - jekyll-feed
+
+feed:
+  excerpt_only: true

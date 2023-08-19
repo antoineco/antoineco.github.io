@@ -39,8 +39,8 @@ Copyright (c) 2023 Antoine Cotten
                 {{ page.modified_date | date_to_long_string: "ordinal" }}
               </time>
               {%- endif -%}
-              {%- if page.author -%}
-              • {% for author in page.author %}
+              {%- if page.authors -%}
+              • {% for author in page.authors %}
               <span itemprop="author" itemscope itemtype="http://schema.org/Person">
                 <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
               {%- if forloop.last == false %}, {% endif -%}
