@@ -32,6 +32,8 @@ plugins:
   - jekyll-feed
 
 exclude:
+  - Gemfile
+  - Gemfile.lock
   - README.md
   - LICENSE*.txt
   - CNAME
