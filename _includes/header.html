@@ -18,16 +18,14 @@ Copyright (c) 2023 Antoine Cotten
       </label>
 
       <div class="menu">
-      {% for page in site.header.pages %}
+      {%- for page in site.header.pages %}
         {%- if page.slug and page.slug != "" and page.slug != nil %}
           {% assign page_link = page.slug %}
-        {%- else %}
+        {% else %}
           {% assign page_link = "/" | append: page.name | downcase %}
-        {%- endif %}
-        <a class="page-link" href="{{ page_link | relative_url }}">
-          {{ page.name }}
-        </a>
-      {% endfor %}
+        {% endif %}
+        <a class="page-link" href="{{ page_link | relative_url }}">{{ page.name }}</a>
+      {%- endfor %}
       </div>
     </nav>
   </div>
