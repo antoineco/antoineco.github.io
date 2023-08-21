@@ -201,6 +201,7 @@ li {
 
 table {
   border-collapse: collapse;
+  width: 100%;
 }
 
 th,
@@ -208,6 +209,14 @@ td {
   padding: 0.25em 0.5em;
   border-bottom-style: solid;
   border-bottom-width: 1px;
+}
+
+th {
+  text-align: inherit;
+}
+
+td {
+  border-bottom-color: $code-border-color;
 }
 
 /**
