@@ -174,7 +174,7 @@ code {
 }
 
 code {
-  padding: 1px 5px;
+  padding: 1px 3px;
 }
 
 pre {
@@ -185,6 +185,13 @@ pre {
     border: 0;
     padding-right: 0;
     padding-left: 0;
+  }
+}
+
+p,
+li {
+  > code {
+    white-space: nowrap;
   }
 }
 
