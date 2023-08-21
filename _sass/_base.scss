@@ -60,6 +60,11 @@ table,
   margin-bottom: calc(#{$spacing-unit} / 2);
 }
 
+sub,
+sup {
+  line-height: 0;
+}
+
 /**
  * Images
  */
