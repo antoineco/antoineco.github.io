@@ -1,0 +1,14 @@
+// SPDX-License-Identifier: ISC
+// Copyright (c) 2023 Antoine Cotten
+
+.software {
+  th {
+    &:first-child {
+      width: 14ch;
+
+      @include media-query($on-laptop) {
+        width: initial;
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{% comment %}
+SPDX-License-Identifier: ISC
+Copyright (c) 2023 Antoine Cotten
+{% endcomment -%}
+<!DOCTYPE html>
+<html>
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="software">
+          <h1 class="page-heading">{{ page.title }}</h1>
+          {{ content }}
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+  </body>
+</html>
