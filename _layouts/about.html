@@ -12,7 +12,8 @@ Copyright (c) 2023 Antoine Cotten
 
     <div class="page-content">
       <div class="wrapper">
-        <div class="home">
+        <div class="about">
+          <h1 class="page-heading">{{ page.title }}</h1>
           <img src="{{ page.profile_picture.src | relative_url }}" alt="{{ page.profile_picture.alt }}" class="profile-pic" />
           {{ content }}
         </div>
