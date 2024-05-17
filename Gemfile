@@ -1,6 +1,7 @@
 source "https://rubygems.org"
 
-ruby "~> 3.3.0"
+# https://github.com/actions/jekyll-build-pages/blob/v1.0.12/Dockerfile
+ruby "~> 2.7.0"
 
 # https://pages.github.com/versions/
 group :jekyll_plugins do
