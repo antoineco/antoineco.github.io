@@ -8,6 +8,7 @@ header:
   pages:
     - name: Journal
       slug: /
+    - name: Freelance
     - name: Software
     - name: About
 
