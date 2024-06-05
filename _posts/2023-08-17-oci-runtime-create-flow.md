@@ -1,6 +1,7 @@
 ---
 layout: post
 title: 'OCI runtime: container creation flow'
+blurb: Deep dive into the intricacies of Linux container runtimes.
 license: true
 tags: [containers, oci]
 ---
