@@ -19,3 +19,21 @@ covered by [ISC][isc].
 
 [isc]: https://www.isc.org/licenses/
 [cc-by-4.0]: https://creativecommons.org/licenses/by/4.0/
+
+## Serving Locally
+
+Using the Docker image from [actions/jekyll-build-pages][gh-build]:
+
+```sh
+echo "$GITHUB_TOKEN" | docker login ghcr.io --username "$GITHUB_USER" --password-stdin
+```
+
+```sh
+docker container run -i --rm \
+  -w /workspace -v "$PWD":/workspace \
+  -p 4000:4000 \
+  --entrypoint=bundle \
+  ghcr.io/actions/jekyll-build-pages:v1.0.12 exec jekyll serve -H 0.0.0.0 --drafts
+```
+
+[gh-build]: https://github.com/actions/jekyll-build-pages
