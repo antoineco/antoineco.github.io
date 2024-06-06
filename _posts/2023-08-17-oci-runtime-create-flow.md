@@ -43,7 +43,7 @@ Here is a sample visualization of a container lifecycle that leverages all five
 of these operations:
 
 <p style="max-width: 500px;">
-  <img src="{{ "assets/img/posts/2023-08-17-oci-runtime-create-flow/runc-seq.svg" | relative_url }}" alt="runc sequence">
+  <img src="{{ "assets/img/content/2023-08-17-oci-runtime-create-flow/runc-seq.svg" | relative_url }}" alt="runc sequence">
 </p>
 
 In the rest of this article, I will focus solely on what exactly happens in the
@@ -333,7 +333,7 @@ This is conceptually very similar to the `fork()` UNIX syscall, in the context
 of a `fork() + exec()`.
 
 <p style="max-width: 500px;">
-  <img src="{{ "assets/img/posts/2023-08-17-oci-runtime-create-flow/runc-create.svg" | relative_url }}" alt="runc create">
+  <img src="{{ "assets/img/content/2023-08-17-oci-runtime-create-flow/runc-create.svg" | relative_url }}" alt="runc create">
 </p>
 
 At the end of the _Create_ phase, `runc` writes the state file `state.json`
@@ -376,7 +376,7 @@ container's init process, triggered by a read from the aforementioned
 runtime configuration from the parent `runc` process during the _Create_ phase,
 so there are no additional steps to be performed here.
 
-![runc start]({{ "assets/img/posts/2023-08-17-oci-runtime-create-flow/runc-start.svg" | relative_url }})
+![runc start]({{ "assets/img/content/2023-08-17-oci-runtime-create-flow/runc-start.svg" | relative_url }})
 
 Finally, the `exec.fifo` named pipe is deleted.
 
