@@ -18,13 +18,13 @@ footer:
       value: hello@acotten.com
       link: mailto:hello@acotten.com
   follow:
-    - name: Twitter
-      link: http://twitter.com/antnco
+    - name: X
+      link: https://x.com/antnco
       username: '@antnco'
     - name: LinkedIn
-      link: http://linkedin.com/in/antoinecotten
+      link: https://linkedin.com/in/antoinecotten
     - name: GitHub
-      link: http://github.com/antoineco
+      link: https://github.com/antoineco
     - name: RSS
       link: /feed.xml
 
