@@ -70,6 +70,12 @@
     margin: 1em 0;
   }
 
+  figure > img + figcaption {
+    font-style: oblique;
+    position: relative;
+    top: -0.75em;
+  }
+
   .highlight {
     // Snippets with line numbers are treated as tables (sighs).
     // Reset those noisy table related properties.
