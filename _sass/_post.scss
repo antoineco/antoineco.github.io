@@ -91,6 +91,13 @@
         border-bottom: none;
         padding: 0;
       }
+
+      .rouge-gutter {
+        user-select: none;
+        opacity: 0.4;
+        width: 1%;
+        white-space: nowrap;
+      }
     }
   }
 }

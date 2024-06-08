@@ -61,8 +61,6 @@
   .il { color: #aa3900 } /* Literal.Number.Integer.Long x*/
   .p { color: #667c8c } /* Punctuation */
 
-  .lineno { color: #888 } /* Line numbers (Rouge) */
-
   &.language-sh,
   &.language-console {
     .nt { font-weight: inherit } /* Name.Tag (flags) */
