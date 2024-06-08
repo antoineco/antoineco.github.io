@@ -1,10 +1,10 @@
-// Theme: autumn
+// Theme: autumn (modified)
 // Source: https://github.com/richleland/pygments-css/blob/c39da1d9/autumn.css
 .highlight {
   .hll { background-color: #ffffcc }
   .c { color: #aaaaaa; font-style: italic } /* Comment */
   .err { color: #F00000; background-color: #F0A0A0 } /* Error */
-  .k { color: #0000aa } /* Keyword */
+  .k { font-weight: bold } /* Keyword */
   .cm { color: #aaaaaa; font-style: italic } /* Comment.Multiline */
   .cp { color: #4c8317 } /* Comment.Preproc */
   .c1 { color: #aaaaaa; font-style: italic } /* Comment.Single */
@@ -13,9 +13,9 @@
   .ge { font-style: italic } /* Generic.Emph */
   .gr { color: #aa0000 } /* Generic.Error */
   .gh { color: #000080; font-weight: bold } /* Generic.Heading */
-  .gi { color: #00aa00 } /* Generic.Inserted */
-  .go { color: #888888 } /* Generic.Output */
-  .gp { color: #555555 } /* Generic.Prompt */
+  .gi { color: #609960 } /* Generic.Inserted */
+  .go { color: #868587 } /* Generic.Output */
+  .gp { color: #545354 } /* Generic.Prompt */
   .gs { font-weight: bold } /* Generic.Strong */
   .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
   .gt { color: #aa0000 } /* Generic.Traceback */
@@ -24,25 +24,25 @@
   .kn { color: #0000aa } /* Keyword.Namespace */
   .kp { color: #0000aa } /* Keyword.Pseudo */
   .kr { color: #0000aa } /* Keyword.Reserved */
-  .kt { color: #00aaaa } /* Keyword.Type */
-  .m { color: #009999 } /* Literal.Number */
+  .kt { color: #609999 } /* Keyword.Type */
+  .m { color: #aa3900 } /* Literal.Number x*/
   .s { color: #aa5500 } /* Literal.String */
-  .na { color: #1e90ff } /* Name.Attribute */
-  .nb { color: #00aaaa } /* Name.Builtin */
-  .nc { color: #00aa00; text-decoration: underline } /* Name.Class */
+  .na { color: #468bcf } /* Name.Attribute */
+  .nb { color: #609999 } /* Name.Builtin */
+  .nc { color: #609960; text-decoration: underline } /* Name.Class */
   .no { color: #aa0000 } /* Name.Constant */
   .nd { color: #888888 } /* Name.Decorator */
   .ni { color: #800000; font-weight: bold } /* Name.Entity */
-  .nf { color: #00aa00 } /* Name.Function */
-  .nn { color: #00aaaa; text-decoration: underline } /* Name.Namespace */
-  .nt { color: #1e90ff; font-weight: bold } /* Name.Tag */
+  .nf { color: #609960 } /* Name.Function */
+  .nn { color: #609999; text-decoration: underline } /* Name.Namespace */
+  .nt { color: #468bcf; font-weight: bold } /* Name.Tag */
   .nv { color: #aa0000 } /* Name.Variable */
   .ow { color: #0000aa } /* Operator.Word */
   .w { color: #bbbbbb } /* Text.Whitespace */
-  .mf { color: #009999 } /* Literal.Number.Float */
-  .mh { color: #009999 } /* Literal.Number.Hex */
-  .mi { color: #009999 } /* Literal.Number.Integer */
-  .mo { color: #009999 } /* Literal.Number.Oct */
+  .mf { color: #aa3900 } /* Literal.Number.Float x*/
+  .mh { color: #aa3900 } /* Literal.Number.Hex x*/
+  .mi { color: #aa3900 } /* Literal.Number.Integer x*/
+  .mo { color: #aa3900 } /* Literal.Number.Oct x*/
   .sb { color: #aa5500 } /* Literal.String.Backtick */
   .sc { color: #aa5500 } /* Literal.String.Char */
   .sd { color: #aa5500 } /* Literal.String.Doc */
@@ -51,14 +51,15 @@
   .sh { color: #aa5500 } /* Literal.String.Heredoc */
   .si { color: #aa5500 } /* Literal.String.Interpol */
   .sx { color: #aa5500 } /* Literal.String.Other */
-  .sr { color: #009999 } /* Literal.String.Regex */
+  .sr { color: #aa3900 } /* Literal.String.Regex x*/
   .s1 { color: #aa5500 } /* Literal.String.Single */
   .ss { color: #0000aa } /* Literal.String.Symbol */
-  .bp { color: #00aaaa } /* Name.Builtin.Pseudo */
+  .bp { color: #aa3900 } /* Name.Builtin.Pseudo */
   .vc { color: #aa0000 } /* Name.Variable.Class */
   .vg { color: #aa0000 } /* Name.Variable.Global */
   .vi { color: #aa0000 } /* Name.Variable.Instance */
-  .il { color: #009999 } /* Literal.Number.Integer.Long */
+  .il { color: #aa3900 } /* Literal.Number.Integer.Long x*/
+  .p { color: #667c8c } /* Punctuation */
 
   .lineno { color: #888 } /* Line numbers (Rouge) */
 
@@ -69,5 +70,14 @@
 
   .language-console {
     .gp { color: #4c8317 } /* Generic.Prompt */
+  }
+
+  .language-go {
+    .nb { color: #609960 } /* Name.Builtin is used for Name.Function by Rouge in Go blocks */
+  }
+
+  .language-rust {
+    .nn { text-decoration: none } /* Name.Namespace */
+    .nd { color: #609960; font-style: italic } /* Name.Decorator is used for macros by Rouge in Rust blocks */
   }
 }
