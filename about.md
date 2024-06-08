@@ -11,7 +11,8 @@ culture around platform and release automation. Nowadays, I spend most of my tim
 the technologies which I believe can positively affect our future.
 
 I am particularly fond of **unikernels** and **Linux containers**, especially in combination with my platform of
-expertise: **Kubernetes**. I work first and foremost in the **Go** programming language.
+expertise: **Kubernetes**. I work first and foremost in the **Go** programming language, and have a genuine interest in
+**Rust** which I am working towards becoming proficient in.
 
 I have had the chance to join companies of different sizes, in a variety of industries, and to approach a multitude of
 problems in so many different ways.
