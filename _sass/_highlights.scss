@@ -1,6 +1,6 @@
 // Theme: autumn (modified)
 // Source: https://github.com/richleland/pygments-css/blob/c39da1d9/autumn.css
-.highlight {
+.highlighter-rouge {
   .hll { background-color: #ffffcc }
   .c { color: #aaaaaa; font-style: italic } /* Comment */
   .err { color: #F00000; background-color: #F0A0A0 } /* Error */
@@ -63,20 +63,20 @@
 
   .lineno { color: #888 } /* Line numbers (Rouge) */
 
-  .language-sh,
-  .language-console {
+  &.language-sh,
+  &.language-console {
     .nt { font-weight: inherit } /* Name.Tag (flags) */
   }
 
-  .language-console {
+  &.language-console {
     .gp { color: #4c8317 } /* Generic.Prompt */
   }
 
-  .language-go {
+  &.language-go {
     .nb { color: #609960 } /* Name.Builtin is used for Name.Function by Rouge in Go blocks */
   }
 
-  .language-rust {
+  &.language-rust {
     .nn { text-decoration: none } /* Name.Namespace */
     .nd { color: #609960; font-style: italic } /* Name.Decorator is used for macros by Rouge in Rust blocks */
   }
