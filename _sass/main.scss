@@ -15,12 +15,12 @@ $spacing-unit: 30px;
 
 // Original palette: #dcdcdd #c5c3c6 #46494c #4c5c68 #1985a1
 // https://coolors.co/palette/dcdcdd-c5c3c6-46494c-4c5c68-1985a1
-$text-color: #0e0e0f; // shade of #46494c
+$text-color: #0e0f0f; // #46494c with reduced "V" coordinate (HSV)
 $site-title-color: #46494c;
-$background-color: #fdfdfd; // tint of #dcdcdd
+$background-color: #fbfbfc; // #dcdcdd with increased "V" coordinate (HSV)
 $brand-color: #1985a1;
 
-$grey-color: #898e92; // tint of #46494c
+$grey-color: #888e94; // #46494c with increased "V" coordinate (HSV)
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark: darken($grey-color, 25%);
 
