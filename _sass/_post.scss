@@ -30,9 +30,13 @@
   }
 }
 
-.post-meta .post-date {
-  text-transform: uppercase;
-  font-size: 120%;
+.post-meta {
+  color: $grey-color;
+
+  .post-date {
+    text-transform: uppercase;
+    font-size: 120%;
+  }
 }
 
 .post-content {
