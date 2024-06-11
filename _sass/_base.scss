@@ -189,8 +189,10 @@ pre {
 }
 
 p,
-li {
+li,
+a {
   > code {
+    font-size: 0.9375em;
     white-space: nowrap;
   }
 }
