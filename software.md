@@ -58,7 +58,7 @@ categories:
   - name: Macintosh
     entries:
     - name: Mac Mouse Fix
-      url: https://mousefix.org/
+      url: https://macmousefix.com
       desc: Because macOS comes without mouse support.
     - name: BetterDisplay
       url: https://betterdisplay.pro/
