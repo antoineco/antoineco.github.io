@@ -5,20 +5,20 @@ Copyright (c) 2023 Antoine Cotten
 {% endcomment -%}
 <!DOCTYPE html>
 <html>
-  {% include head.html %}
+{% include head.html %}
 
-  <body>
-    {% include header.html %}
+<body>
+{% include header.html %}
 
-    <div class="page-content">
-      <div class="wrapper">
-        <div class="freelance">
-          <h1 class="page-heading">{{ page.title }}</h1>
-          {{ content }}
-        </div>
-      </div>
+<div class="page-content">
+  <div class="wrapper">
+    <div class="freelance">
+      <h1 class="page-heading">{{ page.title }}</h1>
+      {{ content }}
     </div>
+  </div>
+</div>
 
-    {% include footer.html %}
-  </body>
+{% include footer.html %}
+</body>
 </html>
