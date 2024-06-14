@@ -139,11 +139,6 @@
   }
 }
 
-.footer-heading {
-  font-size: 18px;
-  margin-bottom: calc(#{$spacing-unit} / 2);
-}
-
 .contact-list,
 .social-media-list {
   list-style: none;
@@ -151,7 +146,6 @@
 }
 
 .footer-col-wrapper {
-  font-size: 15px;
   color: $grey-color;
   margin-left: calc(-1 * #{$spacing-unit} / 2);
   @extend %clearfix;
