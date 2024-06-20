@@ -39,7 +39,7 @@ Copyright (c) 2023 Antoine Cotten
 
   {%- for follow in site.footer.follow %}
     {% if follow.name == 'Twitter' %}
-      {% assign twitter_username = follow.username %}
+      {% assign twitter_username = follow.value %}
       {% break %}
     {% endif %}
   {% endfor -%}

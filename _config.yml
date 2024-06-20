@@ -20,11 +20,13 @@ footer:
   follow:
     - name: X
       link: https://x.com/antnco
-      username: '@antnco'
+      value: '@antnco'
     - name: LinkedIn
       link: https://linkedin.com/in/antoineco
+      value: antoineco
     - name: GitHub
       link: https://github.com/antoineco
+      value: antoineco
     - name: RSS
       link: /feed.xml
 
