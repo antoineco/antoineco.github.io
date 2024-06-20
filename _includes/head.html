@@ -38,8 +38,8 @@ Copyright (c) 2023 Antoine Cotten
   {% endif %}
 
   {%- for follow in site.footer.follow %}
-    {% if follow.name == 'Twitter' %}
-      {% assign twitter_username = follow.value %}
+    {% if follow.name == 'X' %}
+      {% assign x_username = follow.value %}
       {% break %}
     {% endif %}
   {% endfor -%}
@@ -73,9 +73,9 @@ Copyright (c) 2023 Antoine Cotten
   <meta property="twitter:title" content="{{ og_page_title }}"/>
   <meta property="twitter:description" content="{{ page_description }}"/>
   <meta property="twitter:image" content="{{ page_image }}"/>
-  {%- if twitter_username %}
-  <meta property="twitter:creator" content="{{ twitter_username }}"/>
-  <meta property="twitter:site" content="{{ twitter_username }}"/>
+  {%- if x_username %}
+  <meta property="twitter:creator" content="{{ x_username }}"/>
+  <meta property="twitter:site" content="{{ x_username }}"/>
   {% endif %}
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}"/>
   <link rel="canonical" href="{{ page_url }}"/>
