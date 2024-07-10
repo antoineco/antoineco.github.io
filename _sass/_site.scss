@@ -16,7 +16,7 @@
 }
 
 .footer-col {
-  font-size: 12px;
+  font-size: 14px;
 
   h4 {
     text-transform: uppercase;
@@ -50,7 +50,7 @@
     }
 
     @include media-query($on-mobile) {
-      font-size: 14px;
+      font-size: initial;
     }
   }
 }

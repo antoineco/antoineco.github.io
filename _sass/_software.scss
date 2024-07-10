@@ -11,4 +11,12 @@
       }
     }
   }
+
+  h2 {
+    font-size: 26px;
+
+    @include media-query($on-mobile) {
+      font-size: 24px;
+    }
+  }
 }
