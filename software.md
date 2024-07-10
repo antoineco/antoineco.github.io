@@ -26,7 +26,7 @@ categories:
     entries:
     - name: Neovim
       url: https://neovim.io/
-      desc: Vim(proved)-improved. The greatest text editor, this time by the people for the people.
+      desc: Vim(proved)-improved. The greatest text editor, now by the people for the people.
     - name: Helix
       url: https://helix-editor.com/
       desc: Modal text editing re-imagined from the ground up.
@@ -45,7 +45,7 @@ categories:
     entries:
     - name: WezTerm
       url: https://wezfurlong.org/wezterm/
-      desc: If the name "suckless terminal" wasn't already taken, this one would've deserved it.
+      desc: Could legitimately reclaim the name "suckless terminal".
     - name: WSL2
       url: https://learn.microsoft.com/windows/wsl/
       desc: Linux on the desktop. Turns out "Microsoft &#10084; Linux" wasn't just a marketing stunt.
