@@ -6,6 +6,4 @@ ruby "~> 2.7.0"
 # https://pages.github.com/versions/
 group :jekyll_plugins do
   gem "github-pages", "~> 231"
-  gem "jekyll-feed", "~> 0.17.0"
-  gem "jekyll-sitemap", "~> 1.4.0"
 end
