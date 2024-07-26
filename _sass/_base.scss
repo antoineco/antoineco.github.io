@@ -175,6 +175,7 @@ code {
 
 code {
   padding: 1px 3px;
+  font-size: 0.9375em;
 }
 
 pre {
@@ -192,7 +193,6 @@ p,
 li,
 a {
   > code {
-    font-size: 0.9375em;
     white-space: nowrap;
   }
 }
