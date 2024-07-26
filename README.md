@@ -22,7 +22,13 @@ covered by [ISC][isc].
 
 ## Serving Locally
 
-Using the Docker image from [actions/jekyll-build-pages][gh-build]:
+### Using Nix
+
+```sh
+nix develop --command jekyll serve --drafts
+```
+
+### Using the Docker image from [actions/jekyll-build-pages][gh-build]
 
 ```sh
 echo "$GITHUB_TOKEN" | docker login ghcr.io --username "$GITHUB_USER" --password-stdin
