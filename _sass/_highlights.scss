@@ -78,4 +78,8 @@
     .nn { text-decoration: none } /* Name.Namespace */
     .nd { color: #609960; font-style: italic } /* Name.Decorator is used for macros by Rouge in Rust blocks */
   }
+
+  &.language-nix {
+    .nv { color: inherit } /* Name.Variable is used for attribute names by Rouge in Nix blocks */
+  }
 }
