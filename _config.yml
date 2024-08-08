@@ -18,9 +18,6 @@ footer:
       value: hello@acotten.com
       link: mailto:hello@acotten.com
   follow:
-    - name: X
-      link: https://x.com/antnco
-      value: '@antnco'
     - name: LinkedIn
       link: https://linkedin.com/in/antoineco
       value: antoineco

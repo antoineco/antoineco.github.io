@@ -37,14 +37,7 @@ Copyright (c) 2023 Antoine Cotten
     {% assign page_image = page.og_image | absolute_url %}
   {% endif %}
 
-  {%- for follow in site.footer.follow %}
-    {% if follow.name == 'X' %}
-      {% assign x_username = follow.value %}
-      {% break %}
-    {% endif %}
-  {% endfor -%}
-
-  {%- comment %}
+  {% comment %}
   Primary Meta Tags
   {% endcomment %}
   <title>{{ page_title }}</title>
@@ -73,10 +66,7 @@ Copyright (c) 2023 Antoine Cotten
   <meta property="twitter:title" content="{{ og_page_title }}"/>
   <meta property="twitter:description" content="{{ page_description }}"/>
   <meta property="twitter:image" content="{{ page_image }}"/>
-  {%- if x_username %}
-  <meta property="twitter:creator" content="{{ x_username }}"/>
-  <meta property="twitter:site" content="{{ x_username }}"/>
-  {% endif %}
+
   <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}"/>
   <link rel="canonical" href="{{ page_url }}"/>
   <link rel="shortcut icon" href="{{ "/favicon.ico" | relative_url }}" type="image/x-icon"/>
