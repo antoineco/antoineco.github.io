@@ -39,7 +39,7 @@ docker container run -i --rm \
   -w /workspace -v "$PWD":/workspace \
   -p 4000:4000 \
   --entrypoint=bundle \
-  ghcr.io/actions/jekyll-build-pages:v1.0.12 exec jekyll serve -H 0.0.0.0 --drafts
+  ghcr.io/actions/jekyll-build-pages:v1.0.13 exec jekyll serve -H 0.0.0.0 --drafts
 ```
 
 [gh-build]: https://github.com/actions/jekyll-build-pages
