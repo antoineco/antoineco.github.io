@@ -6,6 +6,7 @@ blurb: >
   manage system-wide packages and ephemeral development environments.
 license: true
 tags: [nix, productivity]
+og_image: /assets/img/content/2024-08-06-nix-package-management/og-pic.webp
 ---
 
 I tried Nix about 3 years ago by naively booting NixOS in WSL, without prior
