@@ -24,6 +24,9 @@ footer:
     - name: GitHub
       link: https://github.com/antoineco
       value: antoineco
+    - name: Bluesky
+      link: https://bsky.app/profile/acotten.com
+      value: acotten.com
     - name: RSS
       link: /feed.xml
 
