@@ -31,6 +31,8 @@
     {
       inherit (flake-schemas) schemas;
 
+      formatter = forAllSystems ({ pkgs }: pkgs.nixpkgs-fmt);
+
       devShells = forAllSystems ({ pkgs }:
         let
           ruby-env = (ruby-nix.lib pkgs {
