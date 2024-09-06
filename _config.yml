@@ -40,6 +40,7 @@ exclude:
   - LICENSE*.txt
   - CNAME
   - flake.*
+  - gemset.nix
 
 plugins:
   - jekyll-feed

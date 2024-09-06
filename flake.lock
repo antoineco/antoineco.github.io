@@ -1,5 +1,26 @@
 {
   "nodes": {
+    "bundix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1721093334,
+        "narHash": "sha256-5FghZ0HIETbc0TGcBV8uyixq5z4w/9PF5Puhujz3D1o=",
+        "owner": "inscapist",
+        "repo": "bundix",
+        "rev": "42c08846f7e5d91ef121239fd364feaeb22c0bbc",
+        "type": "github"
+      },
+      "original": {
+        "owner": "inscapist",
+        "ref": "main",
+        "repo": "bundix",
+        "type": "github"
+      }
+    },
     "flake-schemas": {
       "locked": {
         "lastModified": 1721786084,
@@ -16,12 +37,12 @@
     },
     "nixpkgs": {
       "locked": {
-        "lastModified": 1721743106,
-        "narHash": "sha256-adRZhFpBTnHiK3XIELA3IBaApz70HwCYfv7xNrHjebA=",
-        "rev": "dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f",
-        "revCount": 656713,
+        "lastModified": 1725432240,
+        "narHash": "sha256-+yj+xgsfZaErbfYM3T+QvEE2hU7UuE+Jf0fJCJ8uPS0=",
+        "rev": "ad416d066ca1222956472ab7d0555a6946746a80",
+        "revCount": 675862,
         "type": "tarball",
-        "url": "https://api.flakehub.com/f/pinned/NixOS/nixpkgs/0.1.656713%2Brev-dc14ed91132ee3a26255d01d8fd0c1f5bff27b2f/0190ea41-b94b-7e4a-a306-f82a10f3bbdd/source.tar.gz"
+        "url": "https://api.flakehub.com/f/pinned/NixOS/nixpkgs/0.1.675862%2Brev-ad416d066ca1222956472ab7d0555a6946746a80/0191c23d-752f-7dd2-aec3-6e4aaf553f30/source.tar.gz"
       },
       "original": {
         "type": "tarball",
@@ -30,8 +51,30 @@
     },
     "root": {
       "inputs": {
+        "bundix": "bundix",
         "flake-schemas": "flake-schemas",
-        "nixpkgs": "nixpkgs"
+        "nixpkgs": "nixpkgs",
+        "ruby-nix": "ruby-nix"
+      }
+    },
+    "ruby-nix": {
+      "inputs": {
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1723822921,
+        "narHash": "sha256-uEGnVkiNQn36dGtCircgOCrNQPYpx5QF+DSpp8LkaI8=",
+        "owner": "inscapist",
+        "repo": "ruby-nix",
+        "rev": "81709ec61d212dce4d45615b5865f7381e4d1c2e",
+        "type": "github"
+      },
+      "original": {
+        "owner": "inscapist",
+        "repo": "ruby-nix",
+        "type": "github"
       }
     }
   },
