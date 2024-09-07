@@ -25,6 +25,10 @@ covered by [ISC][isc].
 ### Using Nix
 
 ```sh
+nix develop --command bundle-lock
+```
+
+```sh
 nix develop --command jekyll serve --drafts
 ```
 
